@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0a0a0a;
+  color: white;
+  margin: 0;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #fcd34d, #f59e0b);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #f59e0b, #d97706);
+  color: #0a0a0a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #fcd34d, #f59e0b);
+  box-shadow: 0 20px 25px -5px rgba(245, 158, 11, 0.25);
+}
+
+.btn-secondary {
+  border: 2px solid #f59e0b;
+  color: #f59e0b;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  background: transparent;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #f59e0b;
+  color: #0a0a0a;
+}
+
+.section-padding {
+  padding: 4rem 1rem;
+}
+
+.container-custom {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .section-padding {
+    padding: 4rem 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-padding {
+    padding: 4rem 2rem;
+  }
+}
+
+/* Hide scrollbar for gallery */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Slow zoom animation for hero background */
+@keyframes slow-zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.animate-slow-zoom {
+  animation: slow-zoom 20s ease-in-out infinite alternate;
+}
