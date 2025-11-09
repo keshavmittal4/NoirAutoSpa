@@ -1,4 +1,4 @@
-# NoirAutoSpa Website
+```# NoirAutoSpa Website
 
 A premium static website for NoirAutoSpa, a car wrapping and modification company, built with React, Vite, Tailwind CSS v4, and 3D effects.
 
@@ -82,7 +82,7 @@ noirautospa-website/
 └── package.json
 ```
 
-## 🎯 Available Scripts
+```## 🎯 Available Scripts
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
@@ -124,9 +124,10 @@ To deploy the website:
 ```bash
 npm run build
 ```
-
+```
 2. Deploy the `dist` folder to your hosting provider (Vercel, Netlify, etc.)
 
 ---
 
 Built with ❤️ for automotive excellence
+```
